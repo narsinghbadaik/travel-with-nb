@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel with NB</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(12px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00d4ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00d4ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80") center/cover;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#00d4ff;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+section{
+padding:90px 8%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin:15px 0;
+}
+
+footer{
+background:#111827;
+padding:25px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Travel with NB</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Destinations</a>
+<a href="#">Podcast</a>
+<a href="#">Game</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Explore the World with NB</h1>
+
+<p>Travel Guides • Podcasts • Adventures • Games</p>
+
+<a href="#" class="btn">Start Exploring</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Destinations</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599661046827-dacde6976549?auto=format&fit=crop&w=600&q=80">
+<h3>Udaipur</h3>
+<p>The City of Lakes.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80">
+<h3>Jaipur</h3>
+<p>The Pink City.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=600&q=80">
+<h3>Goa</h3>
+<p>Beaches and nightlife.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Travel with NB Podcast</h2>
+
+<p>Listen to travel stories, tips, and destination guides.</p>
+
+<a class="btn" href="#">Listen Now</a>
+
+</section>
+
+<footer>
+
+<h3>Travel with NB</h3>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
